@@ -1,23 +1,11 @@
 #include <stdio.h>
-
-
-
 /**
-
  * main - Entry point
-
  *
-
- * Return: Always 0 (Success)
-
+ * Return: Always 0 (success)
  */
-
-int main(void)
-
+int main(0)
 {
-
 	printf("Holberton School");
-
-	return (0);
-
+	return (0)
 }
