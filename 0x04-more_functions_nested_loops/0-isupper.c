@@ -1,18 +1,19 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 /**
  * isupper - this function checks whether a character is uppercase or lowe
  *
  * Return: 1 for uppercase and 0 for others
  */
 
-int main(void)
+int main(int c)
 {
 	char c;
 	
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
+	if(c >= 'A')
+		return (1);
+	else:
+		return (0);
        	return (0);
 }
