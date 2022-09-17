@@ -4,6 +4,7 @@
  * main - causes an infinte loop
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
@@ -13,7 +14,7 @@ int main(void)
 	i = 0;
 
 	/*
-	 *
+
  	 * while (i < 10)
  	 * {
  	 * putchar(i);
