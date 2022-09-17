@@ -12,10 +12,10 @@ int main(void)
 	{
 		for (b = 2; b <= a; ++b)
 		{
-				if ((a % b) == 0)
-				{
-					break;
-				}
+			if ((a % b) == 0)
+			{
+				break;
+			}
 		}
 		c = (a / b);
 		a = c;
