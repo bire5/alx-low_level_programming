@@ -5,7 +5,6 @@
  * @src: pointer of parameter
  * Return: return dest value
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
