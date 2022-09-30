@@ -10,6 +10,7 @@
 int _sqrt(int x, int y)
 {
 	int sum;
+
 	sum = x - y;
 
 	if (sum < 0)
