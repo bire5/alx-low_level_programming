@@ -3,50 +3,29 @@
 #include <stdlib.h>
 
 /**
- * isNumeric - checks if string is numeric
- * @s: string to check
- * Return: true if is numeric, otherwise return false
- */
-
-bool isNumeric(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] < 48 || s[i] > 57)
-		{
-			return (false);
-		}
-	}
-	return (true):
-
-}
-
-/**
- * main - Entry point
- * @argc: arg counter
- * @argv: argument array
+ * main - A program that adds positive numbers
+ * @argc: The arguments' counter
+ * @argv: The argument's values
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int sum = 0;
-	int i;
+	int num, result = 0, i;
 
-	(void)argc;
-	(void)argv;
-
-	for (i = 1; i < argc; i++)
+	while (argc-- > 1)
 	{
-		if (!isNumeric(argv[i]))
+		for (i = 0; argv[argc][i]; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!(isNumber(argv[argc][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		sum += atoi(argv[i]);
+		num = atoi(argv[argc]);
+		result += num;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", result);
 	return (0);
 }
