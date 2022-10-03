@@ -11,13 +11,15 @@
 
 int main(int argc, char **argv)
 {
-	int num, result = 0, i;
+	int num; 
+	int result = 0;
+        int i;
 
 	while (argc-- > 1)
 	{
 		for (i = 0; argv[argc][i]; i++)
 		{
-			if (!(isNumber(argv[argc][i])))
+			if (!(isdigit(argv[argc][i])))
 			{
 				printf("Error\n");
 				return (1);
