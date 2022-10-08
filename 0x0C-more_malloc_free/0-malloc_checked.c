@@ -4,7 +4,7 @@
 #include <limits.h>
 
 /**
- * malloc_checked - Function that allocates memory
+ * _malloc_checked - Function that allocates memory
  * @b: parameter
  * Return: Return the printer
  */
