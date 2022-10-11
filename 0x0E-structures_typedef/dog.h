@@ -1,11 +1,11 @@
+/*
+ * Fil: dog.h
+ * Auth: Clifford
+ * Desc: Header file that defines a new type struct dog
+ */
+
 #ifndef DOG_H
 #define DOG_H
-
-/*
- * File: dog.h
- * Auth: Clifford
- * Desc: Header file that defines a new type struct dog.
- */
 
 /**
  * struct dog - A new type describing a dog.
