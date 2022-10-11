@@ -2,17 +2,18 @@
 #include "dog.h"
 
 /**
- *init_dog - Initializes variables of type struct dog
- * @d: The dog to be initialized
- * @name: The dog name 
- * @age: The age of the dog
- * @Owner: The owner of the dog
+ * init_dog - initializes a variable of type struct dog
+ * @d: pointer to struct dog to initialize
+ * @name: name to initialize
+ * @age: age to initialize
+ * @owner: owner to initialize
  */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d !=NULL)
+	if (d != NULL)
 	{
-		d->name =name;
+		d->name = name;
 		d->age = age;
 		d->owner = owner;
 	}
