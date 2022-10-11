@@ -8,10 +8,10 @@
  */
 
 /**
- * struct dog - a new type describing a dog
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
+ * struct dog - A new type describing a dog
+ * @name: The name of the dog
+ * @age: The age of the dog
+ * @owner: The owner of the dog
  */
 struct dog
 {
