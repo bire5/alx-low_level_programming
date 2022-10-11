@@ -1,3 +1,8 @@
+/*
+ * File: 2-print_dog.c
+ * Auth: Clifford
+ */
+
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
