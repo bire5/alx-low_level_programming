@@ -6,7 +6,7 @@
  * Auth: Clifford
  * Desc: A header file to define a macro named Size
  */
-#define Size 1024
+#define SIZE 1024
 
 #endif
 
