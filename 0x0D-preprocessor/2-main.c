@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-/*
+/**
  * main -Prints the name of this file
  * Return: End program
  */
