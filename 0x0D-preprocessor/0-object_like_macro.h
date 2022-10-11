@@ -1,6 +1,5 @@
-#ifndef OBJECT_LIKE_MACRO_H
-#define OBJECT_LIKE_MACRO_H
-
+#ifndef HEADER_FILE
+#define HEADER_FILE
 /*
  * File: object_like_macro.h
  * Auth: Clifford
