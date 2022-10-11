@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/**
- * main - Main function
+/*
+ * main -Prints the name of this file
  * Return: End program
  */
 
