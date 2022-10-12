@@ -1,6 +1,7 @@
 /*
  * File: 4-new_dog.c
  * Auth: Clifford
+ * Desc: Contains a function that creates a new
  */
 
 #include "dog.h"
@@ -37,11 +38,11 @@ int _strlen(char *str)
 
 char *_strcopy(char *dest, char *src)
 {
-	int index = 0;
+	int ln = 0;
 
-	for (index = 0; src[index]; index++)
-		dest[index] = src[index];
-	dest[index] = '\0';
+	for (ln = 0; src[ln]; ln++)
+		dest[ln] = src[ln];
+	dest[ln] = '\0';
 	return (dest);
 }
 
@@ -56,35 +57,35 @@ char *_strcopy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *doggo;
+	dog_t *dg;
 
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
-	doggo = malloc(sizeof(dog_t));
+	dg = malloc(sizeof(dog_t));
 
-	if (doggo == NULL)
+	if (dg == NULL)
 		return (NULL);
 
-	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	dg->name = malloc(sizeof(char) * (_strlen(name) + 1));
 
-	if (doggo->name == NULL)
+	if (dg->name == NULL)
 	{
-		free(doggo);
+		free(dg);
 		return (NULL);
 	}
 
-	doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	dg->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 
-	if (doggo->owner == NULL)
+	if (dg->owner == NULL)
 	{
-		free(doggo->name);
-		free(doggo);
+		free(dg->name);
+		free(dg);
 		return (NULL);
 	}
 
-	doggo->name = _strcopy(doggo->name, name);
-	doggo->age = age;
-	doggo->owner = _strcopy(doggo->owner, owner);
-	return (doggo);
+	dg->name = _strcopy(dg->name, name);
+	dg->age = age;
+	dg->owner = _strcopy(dg->owner, owner);
+	return (dg);
 }
