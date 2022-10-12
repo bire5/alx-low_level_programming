@@ -14,17 +14,15 @@
 
 int _strlen(char *s)
 {
-	int x;
-	x = 0;
+	int len = 0;
 
-	while (s[x] != '\0')
-		x++;
-	return (x);
+	while (s[len] != '\0')
+		len++;
+	return (len);
 }
 
 
 /**
- *
  * _strcpy - copies the string pointed to by src
  * including the terminating null byte (\0)
  * to the buffer pointed to by dest
@@ -35,14 +33,14 @@ int _strlen(char *s)
 
 char *_strcpy(char *dest, char *src)
 {
-	int len, i;
-	len = 0;
+	int ln, i;
+	ln = 0;
 
-	while (src[len] != '\0')
+	while (src[ln] != '\0')
 	{
-		len++;
+		ln++;
 	}
-	for (i = 0; i < len; i++)
+	for (i = 0; i < ln; i++)
 	{
 		dest[i] = src[i];
 	}
@@ -61,28 +59,29 @@ char *_strcpy(char *dest, char *src)
  
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *n;
-	n = malloc(sizeof(struct dog));
-
-	if (n == NULL)
+	struct dog *d;
+	
+	d = malloc(sizeof(struct dog));
+	if (d == NULL)
 		return (NULL);
-	n->name = malloc(_strlen(name) + 1);
-
-	if (n->name == NULL)
+	
+	d->name = malloc(_strlen(name) + 1);
+	if (d->name == NULL)
 	{
-		free(n);
+		free(d);
 		return (NULL);
 	}
-	n->age = age;
-	n->owner = malloc(_strlen(owner) + 1);
 
-	if (n->owner == NULL)
+	d->owner = malloc(_strlen(owner) + 1);
+	if (d->owner == NULL)
 	{
-		free(n);
-		free(n->name);
+		free(d);
+		free(d->name);
 		return (NULL);
 	}
-	_strcpy(n->name, name);
-	_strcpy(n->owner, owner);
-	return (n);
+
+	_strcpy(d->name, name);
+	d->age = age;
+	_strcpy(d->owner, owner);
+	return (d);
 }
