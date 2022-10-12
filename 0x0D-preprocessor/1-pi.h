@@ -1,9 +1,3 @@
-/*
- * File: 1-pi.h
- * Auth: Clifford
-*/
-
-
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
