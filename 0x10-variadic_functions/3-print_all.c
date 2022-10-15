@@ -103,7 +103,6 @@ void print_all(const char * const format, ...)
 
 		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
 			j++;
-
 		if (j < 4)
 		{
 			printf("%s", separator);
