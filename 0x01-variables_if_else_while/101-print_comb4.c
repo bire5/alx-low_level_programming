@@ -8,18 +8,18 @@
 
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int dig1, dig2, dig3;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	for (dig1 = 0; dig1 < 8; dig1++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		for (dig2 = dig1 + 1; dig2 < 9; dig2++)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			for (dig3 = dig2 + 1; dig3 < 10; dig3++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+				putchar((dig1 % 10) + '0');
+				putchar((dig2 % 10) + '0');
+				putchar((dig3 % 10) + '0');
+				if (dig1 == 7 && dig2 == 8 && dig3 == 9)
 					continue;	
 				putchar(',');
 				putchar(' ');
